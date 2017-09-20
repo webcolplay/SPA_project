@@ -1,0 +1,72 @@
+/*ie滚动条样式*/
+*{
+    scrollbar-arrow-color: #c0c0c0;  /*三角箭头的颜色*/
+    scrollbar-face-color: #d0d0d0;  /*滚动条的颜色*/
+    scrollbar-3dlight-color: #c0c0c0;  /*滚动条亮边的颜色*/
+    scrollbar-highlight-color: #fff;  /*滚动条空白部分的颜色*/
+    scrollbar-shadow-color: #fff;  /*立体滚动条阴影的颜色*/
+    scrollbar-darkshadow-color: #c0c0c0;  /*滚动条强阴影的颜色*/
+    scrollbar-track-color: #f3f3f3;  /*滚动条背景颜色*/
+    font-family: 'Microsoft YaHei','Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   /* color: #2c3e50;*/
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+width:6px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+-webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+border-radius:10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+border-radius:10px;
+background:rgba(0,0,0,0.4);
+-webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background:rgba(0,0,0,0.4);
+}
+/*placeholder样式修改*/
+textarea,input::-webkit-input-placeholder { 
+    color: #888787!important;
+    font-size: 14px;
+}
+textarea,input:-moz-placeholder { 
+    color:  #888787!important;
+    font-size: 14px;
+}
+textarea,input:-ms-input-placeholder {
+    color: #888787!important;
+    font-size: 14px;
+}
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    min-height: 700px;
+}
+p{
+    margin:0;
+}
+a{text-decoration: none;}
+.chat .el-input__inner{
+    background-color: #2E3136;
+    border-color: #2E3136;
+    color:#fff;
+}
+.chat .el-input__inner:hover,.chat .el-input__inner:focus {
+    border-color: #2E3136;
+}
+/*.chat .el-button--info.is-plain span{
+    color: #868383;
+}*/
+#app .el-dialog--small{width:auto;}
+.red-circle{
+    color:red;
+    margin-right: 4px;
+}
